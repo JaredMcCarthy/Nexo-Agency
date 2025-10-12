@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexo - Agencia de Diseño Web</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="logo">Nexo</div>
+      <button class="lang-toggle" onclick="toggleLanguage()">
+        <span id="langText">English</span>
+      </button>
+      <div class="hero-content">
+        <h1>
+          <span id="heroTitle1">Creamos Sitios Web Que</span><br />
+          <span class="highlight" id="heroTitle2">Hacen Crecer Tu Negocio</span>
+        </h1>
+        <p id="heroSubtitle">
+          Diseño web profesional para pequeñas empresas. Soluciones simples,
+          elegantes y efectivas que te ayudan a destacar en línea.
+        </p>
+        <button class="btn-primary" onclick="scrollToContact()">
+          <span id="ctaBtn">Comenzar</span>
+          <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" id="servicesTitle">Lo Que Ofrecemos</h2>
+        <div class="services-carousel">
+          <div class="services-grid" id="servicesGrid">
+            <div class="service-card">
+              <h3 id="service1Title">Diseño Web</h3>
+              <p id="service1Desc">
+                Diseños hermosos y modernos que capturan la esencia de tu marca
+                y atraen a tus clientes.
+              </p>
+            </div>
+            <div class="service-card">
+              <h3 id="service2Title">Desarrollo</h3>
+              <p id="service2Desc">
+                Código limpio y eficiente que asegura que tu sitio web funcione
+                sin problemas y cargue rápidamente.
+              </p>
+            </div>
+            <div class="service-card">
+              <h3 id="service3Title">Lanzamiento y Soporte</h3>
+              <p id="service3Desc">
+                Te ayudaremos a lanzar tu sitio y brindaremos soporte continuo
+                para mantenerlo funcionando perfectamente.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-dots" id="serviceDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="section">
+      <div class="container">
+        <div class="why-us">
+          <div class="why-us-content">
+            <h2 id="whyTitle">¿Por Qué Elegirnos?</h2>
+            <p id="whySubtitle">
+              Entendemos a las pequeñas empresas porque somos una. Nuestra
+              misión es hacer que el diseño web profesional sea accesible y
+              asequible.
+            </p>
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="icon">✓</span>
+                <span id="feature1"
+                  >Soluciones personalizadas para pequeñas empresas</span
+                >
+              </li>
+              <li class="feature-item">
+                <span class="icon">✓</span>
+                <span id="feature2">Tiempos de entrega rápidos</span>
+              </li>
+              <li class="feature-item">
+                <span class="icon">✓</span>
+                <span id="feature3">Paquetes de precios accesibles</span>
+              </li>
+              <li class="feature-item">
+                <span class="icon">✓</span>
+                <span id="feature4"
+                  >Diseños responsivos y amigables para móviles</span
+                >
+              </li>
+              <li class="feature-item">
+                <span class="icon">✓</span>
+                <span id="feature5">Optimizado para SEO desde el inicio</span>
+              </li>
+              <li class="feature-item">
+                <span class="icon">✓</span>
+                <span id="feature6">Soporte y mantenimiento continuo</span>
+              </li>
+            </ul>
+          </div>
+          <div class="stats-card">
+            <div class="stats-number">100+</div>
+            <div class="stats-label" id="statsLabel">Clientes Felices</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <form id="formContacto">
+      <section class="section contact-section" id="contactSection">
+        <div class="container">
+          <h2 class="section-title" id="contactTitle">Contáctanos</h2>
+          <div class="contact-grid">
+            <div class="contact-form">
+              <div class="form-group">
+                <label for="name" id="nameLabel">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="" />
+              </div>
+              <div class="form-group">
+                <label for="email" id="emailLabel">Email</label>
+                <input type="email" id="email" name="email" placeholder="" />
+              </div>
+              <div class="form-group">
+                <label for="message" id="messageLabel">Mensaje</label>
+                <textarea id="message" name="message" placeholder=""></textarea>
+              </div>
+              <button type="submit" class="btn-primary">
+                <span id="submitBtn">Enviar Mensaje</span>
+              </button>
+            </div>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="icon">U</div>
+                <div class="contact-item-content">
+                  <h4 id="locationTitle">Ubicación</h4>
+                  <p>Tegucigalpa, Honduras</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon">E</div>
+                <div class="contact-item-content">
+                  <h4>Email</h4>
+                  <p>haztuwebsitehn@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon">T</div>
+                <div class="contact-item-content">
+                  <h4 id="phoneTitle">Teléfono</h4>
+                  <p>+504 3364-7133</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+      <p id="footerText">© 2025 Nexo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="animaciones.js"></script>
+    <script src=https://cdn.emailjs.com/dist/email.min.js></script>
+    <script src="ValidCorreo.js"></script>
+  </body>
+</html>
