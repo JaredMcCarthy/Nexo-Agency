@@ -113,53 +113,55 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section contact-section" id="contactSection">
-      <div class="container">
-        <h2 class="section-title" id="contactTitle">Contáctanos</h2>
-        <div class="contact-grid">
-          <div class="contact-form">
-            <div class="form-group">
-              <label for="name" id="nameLabel">Nombre</label>
-              <input type="text" id="name" placeholder="" />
-            </div>
-            <div class="form-group">
-              <label for="email" id="emailLabel">Email</label>
-              <input type="email" id="email" placeholder="" />
-            </div>
-            <div class="form-group">
-              <label for="message" id="messageLabel">Mensaje</label>
-              <textarea id="message" placeholder=""></textarea>
-            </div>
-            <button class="btn-primary" onclick="submitForm()">
-              <span id="submitBtn">Enviar Mensaje</span>
-            </button>
-          </div>
-          <div class="contact-info">
-            <div class="contact-item">
-              <div class="icon">U</div>
-              <div class="contact-item-content">
-                <h4 id="locationTitle">Ubicación</h4>
-                <p>Tegucigalpa, Honduras</p>
+    <form id="formContacto">
+      <section class="section contact-section" id="contactSection">
+        <div class="container">
+          <h2 class="section-title" id="contactTitle">Contáctanos</h2>
+          <div class="contact-grid">
+            <div class="contact-form">
+              <div class="form-group">
+                <label for="name" id="nameLabel">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="" />
               </div>
-            </div>
-            <div class="contact-item">
-              <div class="icon">E</div>
-              <div class="contact-item-content">
-                <h4>Email</h4>
-                <p>haztuwebsitehn@gmail.com</p>
+              <div class="form-group">
+                <label for="email" id="emailLabel">Email</label>
+                <input type="email" id="email" name="email" placeholder="" />
               </div>
+              <div class="form-group">
+                <label for="message" id="messageLabel">Mensaje</label>
+                <textarea id="message" name="message" placeholder=""></textarea>
+              </div>
+              <button class="btn-primary">
+                <span id="submitBtn">Enviar Mensaje</span>
+              </button>
             </div>
-            <div class="contact-item">
-              <div class="icon">T</div>
-              <div class="contact-item-content">
-                <h4 id="phoneTitle">Teléfono</h4>
-                <p>+504 3364-7133</p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="icon">U</div>
+                <div class="contact-item-content">
+                  <h4 id="locationTitle">Ubicación</h4>
+                  <p>Tegucigalpa, Honduras</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon">E</div>
+                <div class="contact-item-content">
+                  <h4>Email</h4>
+                  <p>haztuwebsitehn@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon">T</div>
+                <div class="contact-item-content">
+                  <h4 id="phoneTitle">Teléfono</h4>
+                  <p>+504 3364-7133</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </form>
 
     <!-- Footer -->
     <footer>
@@ -167,5 +169,7 @@
     </footer>
 
     <script src="animaciones.js"></script>
+    <script src=https://cdn.emailjs.com/dist/email.min.js></script>
+    <script src="ValidCorreo.js"></script>
   </body>
 </html>
