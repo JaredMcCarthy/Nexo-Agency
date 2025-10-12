@@ -98,29 +98,6 @@ function scrollToContact() {
     .scrollIntoView({ behavior: "smooth" });
 }
 
-function submitForm() {
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  if (name && email && message) {
-    alert(
-      currentLang === "es"
-        ? "¡Gracias por contactarnos! Te responderemos pronto."
-        : "Thank you for contacting us! We will respond soon."
-    );
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
-  } else {
-    alert(
-      currentLang === "es"
-        ? "Por favor completa todos los campos."
-        : "Please fill in all fields."
-    );
-  }
-}
-
 function checkMobile() {
   isMobile = window.innerWidth <= 768;
   if (isMobile) {
