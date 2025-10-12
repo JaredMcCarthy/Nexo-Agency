@@ -36,14 +36,10 @@ if (formContacto) {
     const name = document.querySelector('input[name="name"]').value;
     const email = document.querySelector('input[name="email"]').value;
     const message = document.querySelector('textarea[name="message"]').value;
-    const title = "Nuevo Mensaje de Posible Cliente desde la web";
-    const time = new Date().toLocaleDateString();
 
     emailjs
       .send("service_8qmdlb2", "template_yb7pxyn", {
-        title: title,
         name: name,
-        time: time,
         email: email,
         message: message,
       })
