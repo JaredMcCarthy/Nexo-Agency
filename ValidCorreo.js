@@ -64,6 +64,7 @@ if (formContacto) {
     //   });
   };
 }
+//este codigo no funcionabien y no se porque
 
 // problemas porque el emailjs no coicinde con el codigo, cree nueva cuenta.
 // codigo que no funcionaba pero deje ahi por si acaso lp ocupaba.
