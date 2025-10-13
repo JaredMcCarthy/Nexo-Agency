@@ -38,7 +38,7 @@ if (formContacto) {
     const message = document.querySelector('textarea[name="message"]').value;
 
     emailjs
-      .send("service_1vou5un", "template_z1bn3hw", {
+      .send("service_7rheup2", "template_z1bn3hw", {
         name: name || "Desconocido", // por si el input viene vacío
         email: email || "no-reply@noreply.com",
         message: message || "(Sin mensaje)",
